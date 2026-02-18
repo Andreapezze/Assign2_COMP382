@@ -10,8 +10,8 @@ A desktop application that converts a **Deterministic Finite Automaton (DFA)** i
 |--------|------|------|
 | Abdellah Lachhab | 300190682 | Frontend |
 | Andrea pezzella | 300179475 | Frontend |
-| Jang Toor | | Backend |
-| Tanishka | | Backend |
+| Jang Toor |300211868 | Backend |
+| Tanishka | 300200109 | Backend |
 
 ---
 
