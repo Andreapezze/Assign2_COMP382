@@ -128,4 +128,10 @@ Terminals: a, b
 
 ## References
 
-*(To be filled in)*
+- JFLAP Workshop 2014, Arvind B. [Converting a DFA to a CFG](https://www.jflap.org/modules/JFLAPWorkshop2014/Upload%20Exercises%20and%20Modules%20here/ArvindB/Exercises/RegularGrammar/Regular2CFG.pdf)
+- *(backend team to fill in)*
+
+## Libraries Used
+
+- `tkinter` — Desktop GUI
+- `unittest` — Backend testing
