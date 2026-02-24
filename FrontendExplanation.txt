@@ -1,8 +1,17 @@
 # Frontend Notes
 (Andrea & Abdellah)
 
-The main goal when designing the input side of this app was to avoid free text fields entirely. Instead of having the user type state names, symbols, or transitions manually, every input is a controlled widget, a spinbox, dropdown, radio button, or checkbox. This eliminates most possible input errors before they even happen.
+The main goal when designing the input side of this app was to avoid free text fields entirely. 
+Instead of having the user type state names, symbols, or transitions manually, every input is a controlled widget, 
+a spinbox, dropdown, radio button, or checkbox. This eliminates most possible input errors before they even happen.
 
-The user starts by picking a number of states (1 to 10) and an alphabet (binary or latin). From that, the app auto-generates the state names as q0, q1, q2, etc. and builds the rest of the form dynamically when Generate Form is clicked. The start state is a dropdown of those exact state names, accept states are checkboxes, and the transition table is a grid of dropdowns, one per (state, symbol) pair, all defaulting to q0. The table is horizontally scrollable to handle large alphabets, and the whole left panel is vertically scrollable so the convert button is always reachable.
+The user starts by picking a number of states (1 to 10) and an alphabet (binary or latin). From that, the app 
+auto-generates the state names as q0, q1, q2, etc. and builds the rest of the form dynamically when Generate Form is clicked. 
+The start state is a dropdown of those exact state names, accept states are checkboxes, and the transition table is a grid of 
+dropdowns, one per (state, symbol) pair, all defaulting to q0. The table is horizontally scrollable to handle large alphabets, 
+and the whole left panel is vertically scrollable so the convert button is always reachable.
 
-Because of this design, the only things we actually need to validate explicitly are that at least one accept state is selected, and that at least one letter is chosen when using the latin alphabet. Everything else like transition completeness, valid state names, valid symbols, is guaranteed by the input controls themselves. If the backend throws an unexpected error, that's also caught and displayed in the UI instead of crashing the app.
+Because of this design, the only things we actually need to validate explicitly are that at least one accept state is selected, 
+and that at least one letter is chosen when using the latin alphabet. Everything else like transition completeness, valid state 
+names, valid symbols, is guaranteed by the input controls themselves. If the backend throws an unexpected error, that's also caught 
+and displayed in the UI instead of crashing the app.
