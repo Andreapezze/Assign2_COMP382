@@ -162,12 +162,9 @@ Terminals: a, b
 
 - JFLAP Workshop 2014, Arvind B. [Converting a DFA to a CFG](https://www.jflap.org/modules/JFLAPWorkshop2014/Upload%20Exercises%20and%20Modules%20here/ArvindB/Exercises/RegularGrammar/Regular2CFG.pdf)
 - Converting a DFA to a context free grammar (CFG) [Video]. (n.d.). YouTube. https://www.youtube.com/watch?v=NrRZi89TiYM
-
-Ekeeda. (n.d.). DFA to right linear grammar (RLG) [Video]. YouTube. https://www.youtube.com/watch?v=xmknBzUHLIc
-
-Gordon College. (n.d.). CPS 220 – Theory of computation: CFL [PDF]. https://www.cs.gordon.edu/courses/cps220/Notes/CFL.pdf
-
-WhiteMech. (n.d.). pythomata. GitHub. https://github.com/whitemech/pythomata
+- Ekeeda. (n.d.). DFA to right linear grammar (RLG) [Video]. YouTube. https://www.youtube.com/watch?v=xmknBzUHLIc
+- Gordon College. (n.d.). CPS 220 – Theory of computation: CFL [PDF]. https://www.cs.gordon.edu/courses/cps220/Notes/CFL.pdf
+- WhiteMech. (n.d.). pythomata. GitHub. https://github.com/whitemech/pythomata
 
 ## Libraries Used
 
