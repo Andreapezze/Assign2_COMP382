@@ -30,5 +30,5 @@ class TestDfaToCfg(unittest.TestCase):
         with self.assertRaises(ValueError):
             convert_dfa_to_cfg({"states": ["q0"]})
 
-if _name_ == "_main_":
+if __name__ == "_main_":
     unittest.main()
