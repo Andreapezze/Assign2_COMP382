@@ -43,7 +43,39 @@ dfa-to-cfg/
 
 ## The Algorithm
 
-*(To be filled in by the backend team)*
+This application creates a similar right-linear grammar (a Context-Free Grammar that produces a regular language) from a Deterministic Finite Automaton (DFA).
+
+Main concept:
+Every DFA state turns into a non-terminal CFG variable.
+Every DFA transition turns into a rule for production.
+In order for the string to terminate, each accept (final) state also receives an epsilon production.
+
+Formal conversion rules: 
+We construct a CFG G = (V, Σ, R, S) given a DFA with states Q, alphabet Σ, transition function δ, start state q0, and accept states F.The DFA states Q are variables V.
+The DFA alphabet Σ is used for terminals.
+The DFA start state q0 is represented by the start variable S.
+
+1) For every transition δ(q, a) = p, add the production:
+q → a p
+
+2) For every accept state f in F, add the production:
+f → ε
+
+Example:
+If the DFA contains δ(q0, a) = q1 and δ(q0, b) = q2, and q1 is an accept state, then the CFG includes:
+q0 → a q1 | b q2
+q1 → ε
+
+The frontend receives the output format back from the backend as a dictionary containing:- variables: the DFA states list
+The list of DFA alphabet symbols is the terminals.
+The DFA start state is the start_variable.
+A dictionary that associates each variable with its set of production strings is called "productions."
+
+For instance, productions for q0 might include: a q1 and b q2.
+Validation notes: To avoid problems and offer unambiguous error messages, the backend validates the received DFA dictionary even though the user interface uses dropdowns to limit inputs. It verifies:- there are needed fields (start_state, accept_states, transitions, states, and alphabet).
+The start_state is a legitimate state.
+All accept states are legitimate, and there is at least one accept state.
+Transitions employ (state, symbol) keys, and the symbols are alphabetic. The DFA is finished.
 
 ---
 
